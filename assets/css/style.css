@@ -4,6 +4,8 @@
     --bg-color: #fff;
     --secondary-bg-color: #eeeeee;
     --heading-color: #5f5f5f;
+    --mi-morado: #9900bf;
+    --mi-morado-s: #e991ff;
     --body-color: rgba(0, 0, 0, 0.7);
     --post-color: rgba(0, 0, 0, 0.44);
     --border-color: rgba(0, 0, 0, 0.15);
@@ -39,23 +41,33 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+/* change font sizes here */
 body {
-    color: var(--body-color);
+    color: var(--mi-morado);
     font-family: 'Verdana', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
     margin: 0 auto 30px auto;
     background-color: var(--bg-color);
 }
 
 p {
-    line-height: 1.9em;
+    color: var(--body-color);
+    line-height: 1.8em;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+li {
+    color: var(--body-color);
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
+    color: var(--body-color);
 }
 
 blockquote {
@@ -64,6 +76,7 @@ blockquote {
     color: var(--blockquote-text-color);
 }
 
+/* for the tags at the bottom */
 .category {
     padding: 4px 6px;
     border-radius: 3px;
@@ -183,21 +196,22 @@ a:active {
     margin-top: 60px;
 }
 
+/* top bar */
 .page-top {
     width: 60%;
     position: fixed;
     right: 0;
     z-index: 3;
     background-color: var(--bg-color);
-    height: 60px;
-    border-bottom: 1px solid var(--border-color);
+    height: 82px;
+    border-bottom: 1px solid var(--mi-morado-s);
 }
 
 .page-top .nav {
     list-style: none;
-    padding: 11px 30px;
+    padding: 11px 40px;
     float: left;
-    font-size: 12px;
+    font-size: 20px;
     display: block;
     width: calc(100% - 30px);
 }
@@ -209,7 +223,7 @@ a:active {
 }
 
 .page-top .nav a {
-    color: var(--nav-text-color);
+    color: var(--mi-morado);
 }
 
 .page-top .nav a:hover {
@@ -265,7 +279,7 @@ a:active {
     left: 0;
     position: fixed;
     z-index: 4;
-    border-right: 1px solid var(--border-color);
+    border-right: 1px solid var(--mi-morado-s);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -286,7 +300,7 @@ a:active {
 }
 
 .sidebar .logo-title .title img {
-    width: 127px;
+    width: 230px;
     border-radius: 50%;
 }
 
@@ -301,7 +315,7 @@ a:active {
 
 .sidebar .logo-title .title a {
     text-decoration: none;
-    color: var(--heading-color);
+    color: var(--mi-morado);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -325,7 +339,7 @@ a:active {
 }
 
 .sidebar .social-links a {
-    color: var(--heading-color);
+    color: var(--mi-morado);
 }
 
 .sidebar .social-links a:hover {
@@ -350,16 +364,16 @@ a:active {
     font-size: 28px;
     line-height: 1;
     font-weight: 600;
-    color: var(--heading-color);
+    color: var(--mi-morado);
 }
 
 .post .post-title h3 {
     text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1;
+    letter-spacing: 2px;
+    line-height: 2;
     font-weight: 600;
     /* color: #464646; */
-    color: var(--heading-color);
+    color: var(--mi-morado);
     font-size: 22px;
     margin: 0;
 }
@@ -367,13 +381,14 @@ a:active {
 .post .post-title a {
     text-decoration: none;
     letter-spacing: 1px;
-    color: var(--heading-color);
+    color: var(--mi-morado);
 }
 
 .post .post-title a:hover {
     text-decoration: underline;
 }
 
+/* links */
 .post .post-content a {
     text-decoration: none;
     letter-spacing: 1px;
@@ -384,8 +399,9 @@ a:active {
     color: #2F69B3;
 }
 
+/* page titles */
 .post .post-content h3 {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -940,7 +956,7 @@ print {
     }
 
     .navbar-burger span {
-        background-color: var(--heading-color);
+        background-color: var(--mi-morado);
         display: block;
         height: 1px;
         left: calc(50% - 8px);
