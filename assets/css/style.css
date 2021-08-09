@@ -3,16 +3,16 @@
 :root {
   --bg-color: #fff;
   --secondary-bg-color: #eeeeee;
-  --heading-color: #464646; /*#5f5f5f;*/
-/*  --mi-morado: #9900bf; */
-/*  --mi-morado-s: #e991ff; */
+  --heading-color: #9900bf; /*#5f5f5f;*/
+  --mi-morado: #9900bf;
+  --mi-morado-s: #e991ff;
   --body-color: rgba(0, 0, 0, 0.7);
   --post-color: rgba(0, 0, 0, 0.44);
   --border-color: rgba(0, 0, 0, 0.15);
   --form-border-color: #9f9f9f;
   --form-button-hover-border-color: #000;
   --pre-bg-color: #f9f9fd;
-  --nav-text-color: #5a5a5a;
+  --nav-text-color: #9900bf; /*5a5a5a*/
   --tag-color: #424242;
   --blockquote-text-color: #858585;
   --blockquote-border-color: #dfe2e5;
@@ -30,16 +30,16 @@
 }
 
 html[data-theme='dark'] {
-  --bg-color: #010408;
+  --bg-color: #454545; /*010408*/
   --secondary-bg-color: rgb(56, 56, 56);
-  --heading-color: #c9d1d9;
+  --heading-color: #9900bf;  /*c9d1d9*/
   --body-color: rgb(169, 169, 179);
   --post-color: rgba(0, 0, 0, 0.44);
   --border-color: #30363d;
   --form-border-color: rgb(169, 169, 179);
   --form-button-hover-border-color: #fff;
   --pre-bg-color: rgb(33, 33, 45);
-  --nav-text-color: rgb(191, 191, 191);
+  --nav-text-color: #9900bf;/*rgb(191, 191, 191);*/
   --tag-color: rgb(191, 191, 191);
   --blockquote-text-color: #808080;
   --blockquote-border-color: #424242;
@@ -56,7 +56,7 @@ html {
 body {
   color: var(--body-color);  /*var(--mi-morado);*/
   font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue', 'Work Sans', 'Hiragino Sans GB', sans-serif; /*'Verdana', sans-serif;*/
-  font-size: 1.5rem; /*20px*/
+  font-size: 1.4rem; /*20px*/
   width: 100%;
   margin: 0 auto; /*0 auto 30px auto*/
   background-color: var(--bg-color);
@@ -66,23 +66,40 @@ p {
   /*color: var(--body-color);*/
   line-height: 1.9em; /*1.8em;*/
   font-weight: 400;
-  font-size: 1.4rem; /*20px*/
+  font-size: 1.8rem; /*20px*/
 }
 
-/*
+/* mine */
 li {
-    color: var(--body-color);
-    line-height: 1.8em;
+/*    color: var(--body-color);*/
+    line-height: 1.9em;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
-*/
+/* mine (end)*/
 
 a {
   text-decoration: none;
   color: var(--link-color);
 }
 
+/*mine*/
+h1 {
+  color: var(--mi-morado);
+}
+
+h2 {
+  color: var(--mi-morado);
+}
+
+h3 {
+  color: var(--mi-morado);
+}
+
+h4 {
+  color: var(--mi-morado);
+}
+/*mine (end)*/
 blockquote {
   padding: 0 1em;
   border-left: 0.25em solid var(--blockquote-border-color);
@@ -345,8 +362,8 @@ aside {
 }
 
 .sidebar .logo-title .title img {
-  width: 127px; /*230px*/
-  height: 127px; /**/
+  width: 200px; /*230px*/
+  height: 200px; /**/
   border-radius: 50%;
 }
 
@@ -1152,7 +1169,7 @@ print {
     .list-with-title .listing .listing-post .post-time {
         max-width: 20%;
     }
-    
+
     .list-with-title .listing .listing-post a {
         width: 80%;
     }
